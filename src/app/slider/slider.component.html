@@ -1,0 +1,15 @@
+<div class="slider-container">
+    <div class="header">
+        <button (click)="prev()">上一页</button>
+        {{curActive+1}}/{{list.length}}
+        <button (click)="next()">下一页</button>
+    </div>
+    <div class="pages">
+        <slide-page *ngFor="let pic of list; let index=index"
+            [toggle]="index===curActive">
+            <div class="wrapper">
+                <img [src]="pic"/>
+            </div>
+        </slide-page>
+    </div>
+</div>

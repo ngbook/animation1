@@ -1,0 +1,44 @@
+.slider-container {
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 40px;
+        z-index: 100;
+        background-color: #1976d2;
+        text-align: center;
+        color: #fff;
+        button {
+            border-radius: 4px;
+            line-height: 24px;
+            -webkit-appearance: none;
+            outline: none;
+            border: 1px solid #ccc;
+            color: #333;
+            background-color: #fff;
+            margin: 0;
+            padding: 0 5px;
+            height: 28px;
+            margin: 6px 10px;
+            cursor: pointer;
+            &:active {
+                background-color: #ddd;
+            }
+        }
+    }
+    .pages {
+        position: relative;
+        width: 100%;
+        slide-page {
+            position: absolute;
+            top: 40px;
+            left: 0;
+            width: 100%;
+            .wrapper {
+                text-align: center;
+                background: #333;
+            }
+        }
+    }
+}
